@@ -6,7 +6,7 @@ In this repo, a notebook aims at implementing the Cycle GAN model based on the o
 First let us recall the idea of regular GAN model and then go on the how the CycleGAN differs. 
 Given some training data $x$ and noise $z$. More details are given in our PDF report but the regular GAN optimization program is the following : 
 
-The generator minimizes $log(1 – D(G(z)))$ and the discriminator maximizes $log D(x) + log(1 – D(G(z)))$. It has been shown that using least squares losses for this problem yields better results. Therefore we can use the following program. The generator will minimize $(D(G(z)) – 1)^2$ and the discriminator will minimize $(D(x) – 1)^2 + (D(G(z)))^2$.
+The generator minimizes ''' $log(1 – D(G(z)))$ ''' and the discriminator maximizes $log D(x) + log(1 – D(G(z)))$. It has been shown that using least squares losses for this problem yields better results. Therefore we can use the following program. The generator will minimize $(D(G(z)) – 1)^2$ and the discriminator will minimize $(D(x) – 1)^2 + (D(G(z)))^2$.
 
 
 The Cycle GAN architecture contains two GAN each one being made of a generator and a discriminator. 
